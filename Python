@@ -1,0 +1,128 @@
+Python From Scratch
+
+# Day1
+ ###
+ 
+ 
+ #1
+
+value1=int(input("Enter the value"))
+
+if value1>80 :
+    print("A")
+else :
+    if 80>value1>50 :
+
+      print("b")
+
+    else :
+
+     print("f")
+
+#2
+def my_function(list1):
+  num0=0
+
+  for x in list1:
+    num0+=x
+  print(num0)
+list2 = [10,1,1]
+my_function(list2)
+
+
+#3
+var1=input("your first name")
+var2=input("your last name")
+
+print(var2 +" " +var1)
+
+
+
+#4
+import datetime
+print("Current date and time: " , datetime.datetime.now())
+
+ 
+ 
+ For Loop
+ 
+ 
+ 
+ 
+ 
+mylist=[20,20,20]
+sum=0
+
+for x in mylist:
+    sum+=x
+print(sum)
+
+sum1=0
+for x in range(0,20):
+     sum1+=x
+print(sum1)
+
+sum2=0
+for counter in range(0,20,2):
+    sum2+=counter
+print(sum2)
+
+
+
+value1=int(input("Enter the value"))
+
+if value1>80 :
+    print("A")
+else :
+    if 80>value1>50 :
+
+      print("b")
+
+    else :    
+
+     print("f")
+
+
+
+
+
+
+input1=int(input("value of 1"))
+input2=int(input("Value of 2"))
+
+if input2>input1:
+    print("input2 is greater")
+
+else:
+    print("No! it's not")
+
+
+
+
+
+print('Hello world')
+
+num=str(0)
+name='Mo'
+
+print(num)
+print(name)
+
+print(type(num))
+print(type(name))
+
+a,b,c='e',3.2,9000
+
+print(a)
+print(b)
+print(c)
+
+var1=['r','f','g']
+var2=('r',8.900,9)
+var3={'name':'yo'}
+var4= False
+
+print(type(var1))
+print(type(var2))
+print(type(var3))
+print(type(var4))
