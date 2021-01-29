@@ -126,3 +126,111 @@ print(type(var1))
 print(type(var2))
 print(type(var3))
 print(type(var4))
+
+
+DAY 2#
+
+
+DICTIONARY AND USES
+
+dict1={
+
+    "brand":"BMW",
+    "MAKE":"AMG",
+    "year":2018,
+    "NEW":True
+}
+
+dict2={
+
+    "Veggie":"Capsicum",
+    "Colour":["red","Green","Yellow"],
+    "Units":100
+
+
+}
+
+print(dict1)
+print(dict1["year"])
+print(dict1.keys())
+print(dict1.values())
+
+print(dict2)
+print(dict2["Units"])
+print(dict2.keys())
+print(dict2.values())
+
+
+
+
+
+# Nested Dictionary
+
+dict3={
+    "std1":{
+        "name":"Raiz",
+        "class":"cpct",
+        "age":20
+    },
+    "std2":{
+        "name":"Mohd",
+        "class":"cpct",
+        "age":22
+    },
+    "std3": {
+        "name": "shamil",
+        "class": "cpct",
+        "age": 23
+    },
+}
+for x in dict3.items():
+    print(x)
+
+for y in dict3.values():
+    print(y)
+
+
+==================
+#sets
+
+setname={"Mohd", "Shamil", " Raiz"}
+setage={20,21,22}
+setloc={"Kuwait","India","Canada"}
+setage.add(32)
+print(setname,setage,setloc)
+
+for x in setage,setloc,setname:
+    print(x)
+
+count=0
+
+for y in setage:
+    count+=y
+print(count)
+
+print(max(setage))
+
+
+
+
+==========
+
+
+timer
+
+import threading
+import time
+
+def timertest():
+    print("I am from timer")
+
+timer=threading.Timer(5.0,timertest)
+timer.start()
+timer.cancel()
+print("I am at the end of the page")
+
+m=0
+while m!=0:
+    print(">>{}",format(m))
+    time.sleep(5)
+    m+=1
